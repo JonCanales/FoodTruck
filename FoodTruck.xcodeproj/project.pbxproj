@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		551E8788A692C6974B4CEDBC /* Pods_FoodTruck.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AF940BD630FF5DBE2BB4FD2 /* Pods_FoodTruck.framework */; };
 		A10F148F2676D8B2007F2891 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10F148E2676D8B2007F2891 /* AppDelegate.swift */; };
 		A10F14912676D8B2007F2891 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10F14902676D8B2007F2891 /* SceneDelegate.swift */; };
 		A10F14932676D8B2007F2891 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10F14922676D8B2007F2891 /* ViewController.swift */; };
 		A10F14962676D8B2007F2891 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A10F14942676D8B2007F2891 /* Main.storyboard */; };
 		A10F14982676D8B3007F2891 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A10F14972676D8B3007F2891 /* Assets.xcassets */; };
 		A10F149B2676D8B3007F2891 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A10F14992676D8B3007F2891 /* LaunchScreen.storyboard */; };
+		A1EFCF432678209B008ED3DB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A1EFCF422678209A008ED3DB /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		064D567AED352E0A15D7FC02 /* Pods-FoodTruck.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodTruck.release.xcconfig"; path = "Target Support Files/Pods-FoodTruck/Pods-FoodTruck.release.xcconfig"; sourceTree = "<group>"; };
+		5AF940BD630FF5DBE2BB4FD2 /* Pods_FoodTruck.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoodTruck.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A10F148B2676D8B2007F2891 /* FoodTruck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodTruck.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A10F148E2676D8B2007F2891 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A10F14902676D8B2007F2891 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +28,8 @@
 		A10F14972676D8B3007F2891 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A10F149A2676D8B3007F2891 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A10F149C2676D8B3007F2891 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1EFCF422678209A008ED3DB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D8CD9A1D2557131776D1E37A /* Pods-FoodTruck.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodTruck.debug.xcconfig"; path = "Target Support Files/Pods-FoodTruck/Pods-FoodTruck.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				551E8788A692C6974B4CEDBC /* Pods_FoodTruck.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		721A2825E71626C5B9275237 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D8CD9A1D2557131776D1E37A /* Pods-FoodTruck.debug.xcconfig */,
+				064D567AED352E0A15D7FC02 /* Pods-FoodTruck.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8DFE2E2C7F643017AD360C7D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5AF940BD630FF5DBE2BB4FD2 /* Pods_FoodTruck.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A10F14822676D8B2007F2891 = {
 			isa = PBXGroup;
 			children = (
 				A10F148D2676D8B2007F2891 /* FoodTruck */,
 				A10F148C2676D8B2007F2891 /* Products */,
+				721A2825E71626C5B9275237 /* Pods */,
+				8DFE2E2C7F643017AD360C7D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +90,7 @@
 				A10F14972676D8B3007F2891 /* Assets.xcassets */,
 				A10F14992676D8B3007F2891 /* LaunchScreen.storyboard */,
 				A10F149C2676D8B3007F2891 /* Info.plist */,
+				A1EFCF422678209A008ED3DB /* GoogleService-Info.plist */,
 			);
 			path = FoodTruck;
 			sourceTree = "<group>";
@@ -74,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A10F149F2676D8B3007F2891 /* Build configuration list for PBXNativeTarget "FoodTruck" */;
 			buildPhases = (
+				E4F3290DA91CB0E3A4194CF6 /* [CP] Check Pods Manifest.lock */,
 				A10F14872676D8B2007F2891 /* Sources */,
 				A10F14882676D8B2007F2891 /* Frameworks */,
 				A10F14892676D8B2007F2891 /* Resources */,
+				DA00EDD0A61E9AB985DE6508 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,12 +155,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				A10F149B2676D8B3007F2891 /* LaunchScreen.storyboard in Resources */,
+				A1EFCF432678209B008ED3DB /* GoogleService-Info.plist in Resources */,
 				A10F14982676D8B3007F2891 /* Assets.xcassets in Resources */,
 				A10F14962676D8B2007F2891 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DA00EDD0A61E9AB985DE6508 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FoodTruck/Pods-FoodTruck-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FoodTruck/Pods-FoodTruck-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FoodTruck/Pods-FoodTruck-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4F3290DA91CB0E3A4194CF6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FoodTruck-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A10F14872676D8B2007F2891 /* Sources */ = {
@@ -283,6 +356,7 @@
 		};
 		A10F14A02676D8B3007F2891 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8CD9A1D2557131776D1E37A /* Pods-FoodTruck.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -301,6 +375,7 @@
 		};
 		A10F14A12676D8B3007F2891 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 064D567AED352E0A15D7FC02 /* Pods-FoodTruck.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
