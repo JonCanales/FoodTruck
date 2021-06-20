@@ -107,7 +107,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                         <state key="normal" title="Find Food Trucks!"/>
                                         <connections>
-                                            <segue destination="XE4-WR-53B" kind="presentation" modalPresentationStyle="fullScreen" id="d4J-fL-fme"/>
+                                            <segue destination="Tat-I5-S62" kind="presentation" id="SMC-eu-Yvf"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -134,21 +134,13 @@
             </objects>
             <point key="canvasLocation" x="933" y="-188"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="cqQ-YE-a1t">
+        <!--Food Truck Hosting View Controller-->
+        <scene sceneID="By9-Gs-U7E">
             <objects>
-                <viewController id="XE4-WR-53B" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="6z3-xG-OQj">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="KdY-oX-3jX"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="hyv-LQ-ba3"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7EZ-ni-3JX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <hostingController id="Tat-I5-S62" customClass="FoodTruckHostingViewController" customModule="FoodTruck" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PBA-lD-O6d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2190" y="-372"/>
+            <point key="canvasLocation" x="1957" y="-271"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="qkB-N6-MdS">

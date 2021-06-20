@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		050F8DEC267E384200AD55CB /* FoodTruckHostingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050F8DEB267E384200AD55CB /* FoodTruckHostingViewController.swift */; };
+		050FFF65267E7A280027DC8E /* FoodTruckMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050FFF64267E7A280027DC8E /* FoodTruckMapView.swift */; };
+		050FFF67267E7BFA0027DC8E /* InsetMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050FFF66267E7BFA0027DC8E /* InsetMapView.swift */; };
 		551E8788A692C6974B4CEDBC /* Pods_FoodTruck.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AF940BD630FF5DBE2BB4FD2 /* Pods_FoodTruck.framework */; };
 		883515F1267874480068F10C /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883515F0267874480068F10C /* RegisterViewController.swift */; };
 		883515F32678794E0068F10C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883515F22678794E0068F10C /* LoginViewController.swift */; };
@@ -21,6 +24,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		050F8DEB267E384200AD55CB /* FoodTruckHostingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTruckHostingViewController.swift; sourceTree = "<group>"; };
+		050FFF64267E7A280027DC8E /* FoodTruckMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTruckMapView.swift; sourceTree = "<group>"; };
+		050FFF66267E7BFA0027DC8E /* InsetMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetMapView.swift; sourceTree = "<group>"; };
 		064D567AED352E0A15D7FC02 /* Pods-FoodTruck.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodTruck.release.xcconfig"; path = "Target Support Files/Pods-FoodTruck/Pods-FoodTruck.release.xcconfig"; sourceTree = "<group>"; };
 		5AF940BD630FF5DBE2BB4FD2 /* Pods_FoodTruck.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoodTruck.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		883515F0267874480068F10C /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +69,8 @@
 			isa = PBXGroup;
 			children = (
 				A10F14942676D8B2007F2891 /* Main.storyboard */,
+				050FFF64267E7A280027DC8E /* FoodTruckMapView.swift */,
+				050FFF66267E7BFA0027DC8E /* InsetMapView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -73,6 +81,7 @@
 				883515F426787B810068F10C /* MenuViewController.swift */,
 				883515F22678794E0068F10C /* LoginViewController.swift */,
 				883515F0267874480068F10C /* RegisterViewController.swift */,
+				050F8DEB267E384200AD55CB /* FoodTruckHostingViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -235,8 +244,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A10F14932676D8B2007F2891 /* ViewController.swift in Sources */,
+				050F8DEC267E384200AD55CB /* FoodTruckHostingViewController.swift in Sources */,
 				883515F526787B810068F10C /* MenuViewController.swift in Sources */,
+				050FFF65267E7A280027DC8E /* FoodTruckMapView.swift in Sources */,
 				A10F148F2676D8B2007F2891 /* AppDelegate.swift in Sources */,
+				050FFF67267E7BFA0027DC8E /* InsetMapView.swift in Sources */,
 				A10F14912676D8B2007F2891 /* SceneDelegate.swift in Sources */,
 				883515F32678794E0068F10C /* LoginViewController.swift in Sources */,
 				883515F1267874480068F10C /* RegisterViewController.swift in Sources */,
