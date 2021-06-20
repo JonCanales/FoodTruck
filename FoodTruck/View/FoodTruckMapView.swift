@@ -15,10 +15,10 @@ struct FoodTruckMapView: View {
     @State private var region: MKCoordinateRegion = {
         
         // Starting coordinates
-        var mapCoordinates = CLLocationCoordinate2D(latitude: 39.833851, longitude: -74.871826)
+        var mapCoordinates = CLLocationCoordinate2D(latitude: 40.4862158, longitude: -74.4518188)
         
-        // Map zoom level
-        var mapZoomLevel = MKCoordinateSpan(latitudeDelta: 70.0, longitudeDelta: 70.0)
+        // Default map zoom level
+        var mapZoomLevel = MKCoordinateSpan(latitudeDelta: 2.5, longitudeDelta: 2.5)
         
         // Map region
         var mapRegion = MKCoordinateRegion(center: mapCoordinates, span: mapZoomLevel)
