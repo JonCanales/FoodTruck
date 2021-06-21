@@ -21,6 +21,7 @@
 		A10F14962676D8B2007F2891 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A10F14942676D8B2007F2891 /* Main.storyboard */; };
 		A10F14982676D8B3007F2891 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A10F14972676D8B3007F2891 /* Assets.xcassets */; };
 		A10F149B2676D8B3007F2891 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A10F14992676D8B3007F2891 /* LaunchScreen.storyboard */; };
+		A1754154267FECFD0034266D /* StandardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1754153267FECFD0034266D /* StandardVC.swift */; };
 		A1EFCF432678209B008ED3DB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A1EFCF422678209A008ED3DB /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +43,7 @@
 		A10F14972676D8B3007F2891 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A10F149A2676D8B3007F2891 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A10F149C2676D8B3007F2891 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1754153267FECFD0034266D /* StandardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardVC.swift; sourceTree = "<group>"; };
 		A1EFCF422678209A008ED3DB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D8CD9A1D2557131776D1E37A /* Pods-FoodTruck.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodTruck.debug.xcconfig"; path = "Target Support Files/Pods-FoodTruck/Pods-FoodTruck.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -71,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				A10F14942676D8B2007F2891 /* Main.storyboard */,
+				A1754153267FECFD0034266D /* StandardVC.swift */,
 				050FFF64267E7A280027DC8E /* FoodTruckMapView.swift */,
 				050FFF66267E7BFA0027DC8E /* InsetMapView.swift */,
 			);
@@ -256,6 +259,7 @@
 				A10F14912676D8B2007F2891 /* SceneDelegate.swift in Sources */,
 				883515F32678794E0068F10C /* LoginViewController.swift in Sources */,
 				883515F1267874480068F10C /* RegisterViewController.swift in Sources */,
+				A1754154267FECFD0034266D /* StandardVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

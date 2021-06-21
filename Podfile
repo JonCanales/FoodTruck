@@ -9,5 +9,8 @@ target 'FoodTruck' do
   # Pods for FoodTruck
     pod 'Firebase/Auth'
     pod 'Firebase/Firestore'
+    pod 'Stripe'
+    pod 'Alamofire'
+    
 
 end

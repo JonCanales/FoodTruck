@@ -212,6 +212,7 @@ PODS:
     - abseil/base/base_internal
     - abseil/base/config
     - abseil/meta/type_traits
+  - Alamofire (5.4.3)
   - BoringSSL-GRPC (0.0.7):
     - BoringSSL-GRPC/Implementation (= 0.0.7)
     - BoringSSL-GRPC/Interface (= 0.0.7)
@@ -303,14 +304,20 @@ PODS:
   - nanopb/decode (2.30908.0)
   - nanopb/encode (2.30908.0)
   - PromisesObjC (1.2.12)
+  - Stripe (21.6.0):
+    - Stripe/Stripe3DS2 (= 21.6.0)
+  - Stripe/Stripe3DS2 (21.6.0)
 
 DEPENDENCIES:
+  - Alamofire
   - Firebase/Auth
   - Firebase/Firestore
+  - Stripe
 
 SPEC REPOS:
   trunk:
     - abseil
+    - Alamofire
     - BoringSSL-GRPC
     - Firebase
     - FirebaseAuth
@@ -325,9 +332,11 @@ SPEC REPOS:
     - leveldb-library
     - nanopb
     - PromisesObjC
+    - Stripe
 
 SPEC CHECKSUMS:
   abseil: 6c8eb7892aefa08d929b39f9bb108e5367e3228f
+  Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
   BoringSSL-GRPC: 8edf627ee524575e2f8d19d56f068b448eea3879
   Firebase: 4bb49ae87756034cef870fa3c4006235eb46f475
   FirebaseAuth: e069ff5736fe9d5dcf61f36244bb1b1ce1897d17
@@ -342,7 +351,8 @@ SPEC CHECKSUMS:
   leveldb-library: 50c7b45cbd7bf543c81a468fe557a16ae3db8729
   nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
   PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
+  Stripe: 6cc7bb348f4b1fad111129f6ee40eb6682deaefb
 
-PODFILE CHECKSUM: 7a7f0803e04a2bb53d2c8277956540b33a612363
+PODFILE CHECKSUM: 76be8375d4d1d2cfd6dbb1458adb6527f226fa82
 
 COCOAPODS: 1.10.1
