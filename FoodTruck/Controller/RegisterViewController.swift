@@ -8,15 +8,40 @@
 import UIKit
 import Firebase
 
-class RegisterViewController: UIViewController {
+class RegisterViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     override func viewDidLoad() {
             super.viewDidLoad()
+        
+        self.emailTextField.delegate = self
+        self.emailTextField.keyboardType = .emailAddress
+        self.passwordTextField.delegate = self
+        
 
             // Do any additional setup after loading the view.
         }
+    
+    
+    @IBOutlet weak var textfieldBox: UIStackView!
+    
+    
+    //hide keyboard when user touches outside keyboard
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
+    //presses return key
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        emailTextField.resignFirstResponder()
+        passwordTextField.resignFirstResponder()
+        return(true)
+    }
+    
+    override var prefersStatusBarHidden: Bool{
+        return true
+    }
     
     @IBAction func buttonPressed(_ sender: Any) {
         
