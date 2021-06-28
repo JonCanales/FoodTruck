@@ -55,6 +55,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <state key="normal" title="Vendor"/>
                                         <connections>
+                                            <action selector="Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fc4-N9-XaB"/>
                                             <segue destination="CUQ-zA-hF8" kind="presentation" modalPresentationStyle="fullScreen" id="rNe-lT-1dd"/>
                                         </connections>
                                     </button>
@@ -291,7 +292,6 @@
                                                 <state key="normal" title="Login"/>
                                                 <connections>
                                                     <action selector="buttonPressed:" destination="pcx-in-wi3" eventType="touchUpInside" id="UeE-1v-4C2"/>
-                                                    <segue destination="6Vc-jm-BLQ" kind="presentation" id="5wp-cB-McQ"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -317,21 +317,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UkQ-gc-Gn9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2164" y="1327"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="W2Q-rl-83B">
-            <objects>
-                <viewController id="6Vc-jm-BLQ" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Ypm-nr-xet">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="DrX-U8-gtI"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tl8-Ny-phV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3422" y="1381"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="V4H-CY-49Y">
@@ -428,6 +413,13 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RyW-cq-0gc">
                                         <rect key="frame" x="0.0" y="692.5" width="414" height="115.5"/>
                                         <state key="normal" title="Make Payment"/>
+                                        <connections>
+                                            <action selector="Button:" destination="xMP-CZ-TmD" eventType="touchUpInside" id="MDC-Zu-qee"/>
+                                            <action selector="OpenStripe:" destination="xMP-CZ-TmD" eventType="touchUpInside" id="C0k-5O-ACF"/>
+                                            <action selector="PayButton:" destination="xMP-CZ-TmD" eventType="touchUpInside" id="dDN-fb-xxm"/>
+                                            <action selector="Payment:" destination="xMP-CZ-TmD" eventType="touchUpInside" id="jsu-Af-Bg7"/>
+                                            <action selector="StripePayment:" destination="xMP-CZ-TmD" eventType="touchUpInside" id="990-Ta-JlE"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -444,6 +436,7 @@
                     <navigationItem key="navigationItem" id="Z4L-tI-bVb"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GKY-LR-Xwy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="xMP-CZ-TmD" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="4767" y="222"/>
         </scene>
@@ -490,6 +483,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2J8-jh-B1Z">
                                         <rect key="frame" x="0.0" y="692.5" width="414" height="115.5"/>
                                         <state key="normal" title="Make Payment"/>
+                                        <connections>
+                                            <action selector="Button:" destination="Obt-sb-tQP" eventType="touchUpInside" id="9Ns-3L-bEe"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -506,6 +502,7 @@
                     <navigationItem key="navigationItem" id="7Fp-x6-jEQ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sdq-15-tgW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="Obt-sb-tQP" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="4820" y="1003"/>
         </scene>

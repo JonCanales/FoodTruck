@@ -21,6 +21,7 @@
 		A10F14962676D8B2007F2891 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A10F14942676D8B2007F2891 /* Main.storyboard */; };
 		A10F14982676D8B3007F2891 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A10F14972676D8B3007F2891 /* Assets.xcassets */; };
 		A10F149B2676D8B3007F2891 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A10F14992676D8B3007F2891 /* LaunchScreen.storyboard */; };
+		A1188EDC2682876C000E5B08 /* Stripe.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1188EDB2682876C000E5B08 /* Stripe.swift */; };
 		A1754154267FECFD0034266D /* StandardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1754153267FECFD0034266D /* StandardVC.swift */; };
 		A1EFCF432678209B008ED3DB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A1EFCF422678209A008ED3DB /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
@@ -43,6 +44,7 @@
 		A10F14972676D8B3007F2891 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A10F149A2676D8B3007F2891 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A10F149C2676D8B3007F2891 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1188EDB2682876C000E5B08 /* Stripe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stripe.swift; sourceTree = "<group>"; };
 		A1754153267FECFD0034266D /* StandardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardVC.swift; sourceTree = "<group>"; };
 		A1EFCF422678209A008ED3DB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D8CD9A1D2557131776D1E37A /* Pods-FoodTruck.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodTruck.debug.xcconfig"; path = "Target Support Files/Pods-FoodTruck/Pods-FoodTruck.debug.xcconfig"; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 				A10F14992676D8B3007F2891 /* LaunchScreen.storyboard */,
 				A10F149C2676D8B3007F2891 /* Info.plist */,
 				A1EFCF422678209A008ED3DB /* GoogleService-Info.plist */,
+				A1188EDB2682876C000E5B08 /* Stripe.swift */,
 			);
 			path = FoodTruck;
 			sourceTree = "<group>";
@@ -251,6 +254,7 @@
 			files = (
 				050FFF69267ED67A0027DC8E /* FoodTruckMapPin.swift in Sources */,
 				A10F14932676D8B2007F2891 /* ViewController.swift in Sources */,
+				A1188EDC2682876C000E5B08 /* Stripe.swift in Sources */,
 				050F8DEC267E384200AD55CB /* FoodTruckHostingViewController.swift in Sources */,
 				883515F526787B810068F10C /* MenuViewController.swift in Sources */,
 				050FFF65267E7A280027DC8E /* FoodTruckMapView.swift in Sources */,

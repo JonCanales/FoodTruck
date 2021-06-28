@@ -6,14 +6,49 @@
 //
 
 import UIKit
+import Stripe
+import Alamofire
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, STPAddCardViewControllerDelegate {
+    func addCardViewControllerDidCancel(_ addCardViewController: STPAddCardViewController) {
+        //Hello
+    }
+    
+    func addCardViewController(_ addCardViewController: STPAddCardViewController, didCreatePaymentMethod paymentMethod: STPPaymentMethod, completion: @escaping STPErrorBlock) {
+        //Hello
+    }
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
-    // pk_test_51J4U8DJ951GjkWs4j1x5lVZvkYMAUXG1ASZ2OsR1OZSpZc6FMEwlaEbhVItXESNIdVhJhDS4rBUIdrfVj5v1H7Vz006kZA1Hf7
+
+    @IBAction func Button(_ sender: Any) {
+        
+        let config = STPPaymentConfiguration()
+        config.requiredBillingAddressFields = .full
+        let viewController = STPAddCardViewController(configuration: config, theme: STPTheme.defaultTheme)
+        viewController.delegate = self
+        let navigationController = UINavigationController(rootViewController: viewController)
+        present(navigationController, animated: true, completion: nil)
+    }
+    fileprivate func createPayment(token: String, amount: Float) {
+
+        AF.request("https://api.stripe.com/v1/charges", method: .post, parameters: ["pk_live_51J4U8DJ951GjkWs403P5DZF4a3sCOlCZk74iVxTq0QqE3FQwLwEoOzbFjGSY4Qdv87opBUKFSPKk4fDF3JY3A3G300mGSs71NQ": token, "0.01": amount * 100],encoding: JSONEncoding.default, headers: nil).responseString {
+    response in
+    switch response.result {
+    case .success:
+    print("Success")
+
+    break
+    case .failure(let error):
+
+    print("Failure")
+    }
+    }
+    }
+    
 }
 
