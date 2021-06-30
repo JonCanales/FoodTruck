@@ -12,6 +12,8 @@
 		050FFF67267E7BFA0027DC8E /* InsetMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050FFF66267E7BFA0027DC8E /* InsetMapView.swift */; };
 		050FFF69267ED67A0027DC8E /* FoodTruckMapPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050FFF68267ED67A0027DC8E /* FoodTruckMapPin.swift */; };
 		0554CAE7268BFF3400DC64CF /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0554CAE6268BFF3400DC64CF /* ButtonView.swift */; };
+		0554CAE9268C12D500DC64CF /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0554CAE8268C12D500DC64CF /* ContactViewController.swift */; };
+		0554CAEB268C132200DC64CF /* SubmitEventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0554CAEA268C132200DC64CF /* SubmitEventsViewController.swift */; };
 		551E8788A692C6974B4CEDBC /* Pods_FoodTruck.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AF940BD630FF5DBE2BB4FD2 /* Pods_FoodTruck.framework */; };
 		883515F1267874480068F10C /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883515F0267874480068F10C /* RegisterViewController.swift */; };
 		883515F32678794E0068F10C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883515F22678794E0068F10C /* LoginViewController.swift */; };
@@ -31,6 +33,8 @@
 		050FFF66267E7BFA0027DC8E /* InsetMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetMapView.swift; sourceTree = "<group>"; };
 		050FFF68267ED67A0027DC8E /* FoodTruckMapPin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTruckMapPin.swift; sourceTree = "<group>"; };
 		0554CAE6268BFF3400DC64CF /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		0554CAE8268C12D500DC64CF /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		0554CAEA268C132200DC64CF /* SubmitEventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitEventsViewController.swift; sourceTree = "<group>"; };
 		064D567AED352E0A15D7FC02 /* Pods-FoodTruck.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodTruck.release.xcconfig"; path = "Target Support Files/Pods-FoodTruck/Pods-FoodTruck.release.xcconfig"; sourceTree = "<group>"; };
 		5AF940BD630FF5DBE2BB4FD2 /* Pods_FoodTruck.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoodTruck.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		883515F0267874480068F10C /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
@@ -88,6 +92,8 @@
 				883515F0267874480068F10C /* RegisterViewController.swift */,
 				050F8DEB267E384200AD55CB /* FoodTruckHostingViewController.swift */,
 				050FFF68267ED67A0027DC8E /* FoodTruckMapPin.swift */,
+				0554CAE8268C12D500DC64CF /* ContactViewController.swift */,
+				0554CAEA268C132200DC64CF /* SubmitEventsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -251,9 +257,11 @@
 			files = (
 				050FFF69267ED67A0027DC8E /* FoodTruckMapPin.swift in Sources */,
 				A10F14932676D8B2007F2891 /* ViewController.swift in Sources */,
+				0554CAEB268C132200DC64CF /* SubmitEventsViewController.swift in Sources */,
 				050F8DEC267E384200AD55CB /* FoodTruckHostingViewController.swift in Sources */,
 				0554CAE7268BFF3400DC64CF /* ButtonView.swift in Sources */,
 				050FFF65267E7A280027DC8E /* FoodTruckMapView.swift in Sources */,
+				0554CAE9268C12D500DC64CF /* ContactViewController.swift in Sources */,
 				A10F148F2676D8B2007F2891 /* AppDelegate.swift in Sources */,
 				050FFF67267E7BFA0027DC8E /* InsetMapView.swift in Sources */,
 				A10F14912676D8B2007F2891 /* SceneDelegate.swift in Sources */,
