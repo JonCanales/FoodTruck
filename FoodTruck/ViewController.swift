@@ -15,7 +15,7 @@ class ViewController: UIViewController, STPAddCardViewControllerDelegate {
     }
     
     func addCardViewController(_ addCardViewController: STPAddCardViewController, didCreatePaymentMethod paymentMethod: STPPaymentMethod, completion: @escaping STPErrorBlock) {
-        //Hello
+        print("Done.")
     }
     
 
