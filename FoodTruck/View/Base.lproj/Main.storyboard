@@ -232,7 +232,7 @@
                                                 <state key="normal" title="Register"/>
                                                 <connections>
                                                     <action selector="buttonPressed:" destination="Dua-iJ-9Fi" eventType="touchUpInside" id="QQu-Ua-OHA"/>
-                                                    <segue destination="ptP-um-njl" kind="presentation" modalPresentationStyle="fullScreen" id="m7h-GA-9uX"/>
+                                                    <segue destination="ptP-um-njl" kind="presentation" identifier="registerSegue" modalPresentationStyle="fullScreen" id="m7h-GA-9uX"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -292,7 +292,7 @@
                                                 <state key="normal" title="Login"/>
                                                 <connections>
                                                     <action selector="buttonPressed:" destination="pcx-in-wi3" eventType="touchUpInside" id="UeE-1v-4C2"/>
-                                                    <segue destination="6Vc-jm-BLQ" kind="presentation" id="5wp-cB-McQ"/>
+                                                    <segue destination="6Vc-jm-BLQ" kind="presentation" identifier="loginSegue" id="5wp-cB-McQ"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -382,31 +382,6 @@
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="QvF-uD-T3X">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
-                                <subviews>
-                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" style="inline" translatesAutoresizingMaskIntoConstraints="NO" id="w2Z-l3-6wG">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="445"/>
-                                    </datePicker>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Event Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e4B-d3-jyA">
-                                        <rect key="frame" x="0.0" y="445" width="414" height="126"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Location" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="spk-MG-Brz">
-                                        <rect key="frame" x="0.0" y="571" width="414" height="126"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g6i-t8-hUL">
-                                        <rect key="frame" x="0.0" y="697" width="414" height="111"/>
-                                        <state key="normal" title="Submit"/>
-                                    </button>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="e4B-d3-jyA" firstAttribute="height" secondItem="g6i-t8-hUL" secondAttribute="height" multiplier="1.13333" id="D7o-iN-olw"/>
-                                    <constraint firstItem="spk-MG-Brz" firstAttribute="height" secondItem="e4B-d3-jyA" secondAttribute="height" id="KQ1-i7-Nmy"/>
-                                    <constraint firstItem="g6i-t8-hUL" firstAttribute="height" secondItem="w2Z-l3-6wG" secondAttribute="height" multiplier="0.25" id="OBA-UB-ogK"/>
-                                    <constraint firstItem="g6i-t8-hUL" firstAttribute="height" secondItem="spk-MG-Brz" secondAttribute="height" multiplier="0.882353" id="gK9-6q-4Xm"/>
-                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="dGM-BF-diQ"/>

@@ -62,5 +62,11 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSCalendarsUsageDescription</key>
+	<string>Needed to submit vendor events to New Jersey Food Trucks R&apos; Us calendar database.</string>
+	<key>NSRemindersUsageDescription</key>
+	<string>Optional reminders of vendor events.</string>
+	<key>NSContactsUsageDescription</key>
+	<string>Optional adding of invitees to calendar events.</string>
 </dict>
 </plist>

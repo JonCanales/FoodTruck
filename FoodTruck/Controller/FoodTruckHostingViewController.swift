@@ -18,6 +18,7 @@ class FoodTruckHostingViewController: UIHostingController<FoodTruckMapView> {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 
     }
     
