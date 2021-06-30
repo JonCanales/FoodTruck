@@ -64,6 +64,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0554CAEC268C14B000DC64CF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		721A2825E71626C5B9275237 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -130,6 +137,7 @@
 				A10F148E2676D8B2007F2891 /* AppDelegate.swift */,
 				A10F14902676D8B2007F2891 /* SceneDelegate.swift */,
 				A10F14922676D8B2007F2891 /* ViewController.swift */,
+				0554CAEC268C14B000DC64CF /* Model */,
 				883515F626787B9E0068F10C /* View */,
 				883515F726787BA70068F10C /* Controller */,
 				A10F14972676D8B3007F2891 /* Assets.xcassets */,
