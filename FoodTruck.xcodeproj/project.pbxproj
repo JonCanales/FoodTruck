@@ -11,10 +11,12 @@
 		050FFF65267E7A280027DC8E /* FoodTruckMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050FFF64267E7A280027DC8E /* FoodTruckMapView.swift */; };
 		050FFF67267E7BFA0027DC8E /* InsetMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050FFF66267E7BFA0027DC8E /* InsetMapView.swift */; };
 		050FFF69267ED67A0027DC8E /* FoodTruckMapPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050FFF68267ED67A0027DC8E /* FoodTruckMapPin.swift */; };
+		0554CAE7268BFF3400DC64CF /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0554CAE6268BFF3400DC64CF /* ButtonView.swift */; };
+		0554CAE9268C12D500DC64CF /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0554CAE8268C12D500DC64CF /* ContactViewController.swift */; };
+		0554CAEB268C132200DC64CF /* SubmitEventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0554CAEA268C132200DC64CF /* SubmitEventsViewController.swift */; };
 		551E8788A692C6974B4CEDBC /* Pods_FoodTruck.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AF940BD630FF5DBE2BB4FD2 /* Pods_FoodTruck.framework */; };
 		883515F1267874480068F10C /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883515F0267874480068F10C /* RegisterViewController.swift */; };
 		883515F32678794E0068F10C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883515F22678794E0068F10C /* LoginViewController.swift */; };
-		883515F526787B810068F10C /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883515F426787B810068F10C /* MenuViewController.swift */; };
 		A10F148F2676D8B2007F2891 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10F148E2676D8B2007F2891 /* AppDelegate.swift */; };
 		A10F14912676D8B2007F2891 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10F14902676D8B2007F2891 /* SceneDelegate.swift */; };
 		A10F14932676D8B2007F2891 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10F14922676D8B2007F2891 /* ViewController.swift */; };
@@ -30,11 +32,13 @@
 		050FFF64267E7A280027DC8E /* FoodTruckMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTruckMapView.swift; sourceTree = "<group>"; };
 		050FFF66267E7BFA0027DC8E /* InsetMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetMapView.swift; sourceTree = "<group>"; };
 		050FFF68267ED67A0027DC8E /* FoodTruckMapPin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTruckMapPin.swift; sourceTree = "<group>"; };
+		0554CAE6268BFF3400DC64CF /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		0554CAE8268C12D500DC64CF /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		0554CAEA268C132200DC64CF /* SubmitEventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitEventsViewController.swift; sourceTree = "<group>"; };
 		064D567AED352E0A15D7FC02 /* Pods-FoodTruck.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodTruck.release.xcconfig"; path = "Target Support Files/Pods-FoodTruck/Pods-FoodTruck.release.xcconfig"; sourceTree = "<group>"; };
 		5AF940BD630FF5DBE2BB4FD2 /* Pods_FoodTruck.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoodTruck.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		883515F0267874480068F10C /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		883515F22678794E0068F10C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		883515F426787B810068F10C /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		A10F148B2676D8B2007F2891 /* FoodTruck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodTruck.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A10F148E2676D8B2007F2891 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A10F14902676D8B2007F2891 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +64,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0554CAEC268C14B000DC64CF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		721A2825E71626C5B9275237 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -76,6 +87,7 @@
 				A1754153267FECFD0034266D /* StandardVC.swift */,
 				050FFF64267E7A280027DC8E /* FoodTruckMapView.swift */,
 				050FFF66267E7BFA0027DC8E /* InsetMapView.swift */,
+				0554CAE6268BFF3400DC64CF /* ButtonView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -83,11 +95,12 @@
 		883515F726787BA70068F10C /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				883515F426787B810068F10C /* MenuViewController.swift */,
 				883515F22678794E0068F10C /* LoginViewController.swift */,
 				883515F0267874480068F10C /* RegisterViewController.swift */,
 				050F8DEB267E384200AD55CB /* FoodTruckHostingViewController.swift */,
 				050FFF68267ED67A0027DC8E /* FoodTruckMapPin.swift */,
+				0554CAE8268C12D500DC64CF /* ContactViewController.swift */,
+				0554CAEA268C132200DC64CF /* SubmitEventsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -124,6 +137,7 @@
 				A10F148E2676D8B2007F2891 /* AppDelegate.swift */,
 				A10F14902676D8B2007F2891 /* SceneDelegate.swift */,
 				A10F14922676D8B2007F2891 /* ViewController.swift */,
+				0554CAEC268C14B000DC64CF /* Model */,
 				883515F626787B9E0068F10C /* View */,
 				883515F726787BA70068F10C /* Controller */,
 				A10F14972676D8B3007F2891 /* Assets.xcassets */,
@@ -251,9 +265,11 @@
 			files = (
 				050FFF69267ED67A0027DC8E /* FoodTruckMapPin.swift in Sources */,
 				A10F14932676D8B2007F2891 /* ViewController.swift in Sources */,
+				0554CAEB268C132200DC64CF /* SubmitEventsViewController.swift in Sources */,
 				050F8DEC267E384200AD55CB /* FoodTruckHostingViewController.swift in Sources */,
-				883515F526787B810068F10C /* MenuViewController.swift in Sources */,
+				0554CAE7268BFF3400DC64CF /* ButtonView.swift in Sources */,
 				050FFF65267E7A280027DC8E /* FoodTruckMapView.swift in Sources */,
+				0554CAE9268C12D500DC64CF /* ContactViewController.swift in Sources */,
 				A10F148F2676D8B2007F2891 /* AppDelegate.swift in Sources */,
 				050FFF67267E7BFA0027DC8E /* InsetMapView.swift in Sources */,
 				A10F14912676D8B2007F2891 /* SceneDelegate.swift in Sources */,

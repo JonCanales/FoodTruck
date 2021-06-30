@@ -11,6 +11,7 @@ target 'FoodTruck' do
     pod 'Firebase/Firestore'
     pod 'Stripe'
     pod 'Alamofire'
+    pod 'CalendarKit'
     
 
 end
