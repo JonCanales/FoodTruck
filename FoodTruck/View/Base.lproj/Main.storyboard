@@ -423,6 +423,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tlV-4O-Mjo">
                                         <rect key="frame" x="0.0" y="132.5" width="414" height="53"/>
                                         <state key="normal" title="www.njfoodtrucksrus.com"/>
+                                        <connections>
+                                            <action selector="websiteButtonPressed:" destination="8Nj-MM-xRP" eventType="touchUpInside" id="CwZ-0C-Zv8"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jackie Carr" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MTE-eQ-PPi">
                                         <rect key="frame" x="0.0" y="185.5" width="414" height="238.5"/>
@@ -442,6 +445,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i2i-2d-oly">
                                                 <rect key="frame" x="196" y="0.0" width="218" height="119"/>
                                                 <state key="normal" title="908) 370 -3130"/>
+                                                <connections>
+                                                    <action selector="numberButtonPressed:" destination="8Nj-MM-xRP" eventType="touchUpInside" id="k4u-dp-Gi6"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -460,6 +466,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eCu-Pt-Lq4">
                                                 <rect key="frame" x="138" y="0.0" width="276" height="265"/>
                                                 <state key="normal" title="jackie@carrmarketingassociates.com"/>
+                                                <connections>
+                                                    <action selector="emailButtonPressed:" destination="8Nj-MM-xRP" eventType="touchUpInside" id="I83-10-71g"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
