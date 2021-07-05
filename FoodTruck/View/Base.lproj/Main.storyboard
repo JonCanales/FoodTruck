@@ -56,7 +56,6 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <state key="normal" title="Vendor"/>
                                         <connections>
-                                            <action selector="Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EtV-1B-x7a"/>
                                             <action selector="vendorButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QZk-Qf-Ozp"/>
                                             <segue destination="CUQ-zA-hF8" kind="show" identifier="UserTrackToAccount" id="xvP-rK-hmC"/>
                                         </connections>
@@ -344,8 +343,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <state key="normal" title="Submit Events"/>
                                         <connections>
-                                            <action selector="submitEventsButtonPressed:" destination="6Vc-jm-BLQ" eventType="touchUpInside" id="ac1-F7-MGo"/>
-                                            <segue destination="bjI-eI-IJo" kind="show" identifier="MenuToEvent" id="vXc-WP-i9h"/>
+                                            <segue destination="bjI-eI-IJo" kind="show" identifier="MenuToEvent" id="KkY-Bd-N9g"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OXo-zT-KFj">
@@ -353,8 +351,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <state key="normal" title="Payment"/>
                                         <connections>
-                                            <action selector="Button:" destination="6Vc-jm-BLQ" eventType="touchUpInside" id="P0k-ai-TlZ"/>
-                                            <action selector="paymentButtonPressed:" destination="6Vc-jm-BLQ" eventType="touchUpInside" id="Lrs-no-QOe"/>
+                                            <action selector="paymentButtonPressed:" destination="6Vc-jm-BLQ" eventType="touchUpInside" id="30k-aY-xFU"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oe2-bd-iLP">
@@ -362,7 +359,6 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <state key="normal" title="Contact"/>
                                         <connections>
-                                            <action selector="contactButtonPressed:" destination="6Vc-jm-BLQ" eventType="touchUpInside" id="Waa-cP-VCg"/>
                                             <segue destination="8Nj-MM-xRP" kind="show" identifier="MenuToContact" id="sSH-Bm-wyp"/>
                                         </connections>
                                     </button>

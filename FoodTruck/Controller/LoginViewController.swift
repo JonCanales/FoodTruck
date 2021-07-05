@@ -31,7 +31,7 @@ class LoginViewController: UIViewController {
                     print(e.localizedDescription)
                 }
                 else{
-                    self.performSegue(withIdentifier: Segues.paymentSegue, sender: self)
+                    self.performSegue(withIdentifier: Segues.menuSegue, sender: self)
                 }
                 
             }
