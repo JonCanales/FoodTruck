@@ -35,7 +35,7 @@ class RegisterViewController: UIViewController {
                 
                 else{
                     //whenever you call a function, it needs to use self keyboard while in a Closure
-                    self.performSegue(withIdentifier: "registerSegue" , sender: self)
+                    self.performSegue(withIdentifier: Segues.menuSegue , sender: self)
                 }
             }
         }

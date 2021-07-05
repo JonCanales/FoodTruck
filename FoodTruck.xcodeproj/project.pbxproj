@@ -11,6 +11,9 @@
 		050FFF65267E7A280027DC8E /* FoodTruckMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050FFF64267E7A280027DC8E /* FoodTruckMapView.swift */; };
 		050FFF67267E7BFA0027DC8E /* InsetMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050FFF66267E7BFA0027DC8E /* InsetMapView.swift */; };
 		050FFF69267ED67A0027DC8E /* FoodTruckMapPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050FFF68267ED67A0027DC8E /* FoodTruckMapPin.swift */; };
+		05171584268EBCD0001345E7 /* UserTrackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05171583268EBCD0001345E7 /* UserTrackViewController.swift */; };
+		05171586268EC525001345E7 /* Segues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05171585268EC525001345E7 /* Segues.swift */; };
+		05171588268ECA68001345E7 /* VendorMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05171587268ECA68001345E7 /* VendorMenuViewController.swift */; };
 		0554CAE7268BFF3400DC64CF /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0554CAE6268BFF3400DC64CF /* ButtonView.swift */; };
 		0554CAE9268C12D500DC64CF /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0554CAE8268C12D500DC64CF /* ContactViewController.swift */; };
 		0554CAEB268C132200DC64CF /* SubmitEventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0554CAEA268C132200DC64CF /* SubmitEventsViewController.swift */; };
@@ -19,7 +22,7 @@
 		883515F32678794E0068F10C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883515F22678794E0068F10C /* LoginViewController.swift */; };
 		A10F148F2676D8B2007F2891 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10F148E2676D8B2007F2891 /* AppDelegate.swift */; };
 		A10F14912676D8B2007F2891 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10F14902676D8B2007F2891 /* SceneDelegate.swift */; };
-		A10F14932676D8B2007F2891 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10F14922676D8B2007F2891 /* ViewController.swift */; };
+		A10F14932676D8B2007F2891 /* StripeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10F14922676D8B2007F2891 /* StripeViewController.swift */; };
 		A10F14962676D8B2007F2891 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A10F14942676D8B2007F2891 /* Main.storyboard */; };
 		A10F14982676D8B3007F2891 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A10F14972676D8B3007F2891 /* Assets.xcassets */; };
 		A10F149B2676D8B3007F2891 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A10F14992676D8B3007F2891 /* LaunchScreen.storyboard */; };
@@ -32,6 +35,9 @@
 		050FFF64267E7A280027DC8E /* FoodTruckMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTruckMapView.swift; sourceTree = "<group>"; };
 		050FFF66267E7BFA0027DC8E /* InsetMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetMapView.swift; sourceTree = "<group>"; };
 		050FFF68267ED67A0027DC8E /* FoodTruckMapPin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTruckMapPin.swift; sourceTree = "<group>"; };
+		05171583268EBCD0001345E7 /* UserTrackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTrackViewController.swift; sourceTree = "<group>"; };
+		05171585268EC525001345E7 /* Segues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Segues.swift; path = FoodTruck/Controller/Segues.swift; sourceTree = SOURCE_ROOT; };
+		05171587268ECA68001345E7 /* VendorMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VendorMenuViewController.swift; sourceTree = "<group>"; };
 		0554CAE6268BFF3400DC64CF /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		0554CAE8268C12D500DC64CF /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		0554CAEA268C132200DC64CF /* SubmitEventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitEventsViewController.swift; sourceTree = "<group>"; };
@@ -42,7 +48,7 @@
 		A10F148B2676D8B2007F2891 /* FoodTruck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodTruck.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A10F148E2676D8B2007F2891 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A10F14902676D8B2007F2891 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A10F14922676D8B2007F2891 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A10F14922676D8B2007F2891 /* StripeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StripeViewController.swift; sourceTree = "<group>"; };
 		A10F14952676D8B2007F2891 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A10F14972676D8B3007F2891 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A10F149A2676D8B3007F2891 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -67,6 +73,7 @@
 		0554CAEC268C14B000DC64CF /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				05171585268EC525001345E7 /* Segues.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -95,12 +102,15 @@
 		883515F726787BA70068F10C /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				A10F14922676D8B2007F2891 /* StripeViewController.swift */,
 				883515F22678794E0068F10C /* LoginViewController.swift */,
 				883515F0267874480068F10C /* RegisterViewController.swift */,
 				050F8DEB267E384200AD55CB /* FoodTruckHostingViewController.swift */,
 				050FFF68267ED67A0027DC8E /* FoodTruckMapPin.swift */,
 				0554CAE8268C12D500DC64CF /* ContactViewController.swift */,
 				0554CAEA268C132200DC64CF /* SubmitEventsViewController.swift */,
+				05171583268EBCD0001345E7 /* UserTrackViewController.swift */,
+				05171587268ECA68001345E7 /* VendorMenuViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -136,7 +146,6 @@
 			children = (
 				A10F148E2676D8B2007F2891 /* AppDelegate.swift */,
 				A10F14902676D8B2007F2891 /* SceneDelegate.swift */,
-				A10F14922676D8B2007F2891 /* ViewController.swift */,
 				0554CAEC268C14B000DC64CF /* Model */,
 				883515F626787B9E0068F10C /* View */,
 				883515F726787BA70068F10C /* Controller */,
@@ -264,18 +273,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				050FFF69267ED67A0027DC8E /* FoodTruckMapPin.swift in Sources */,
-				A10F14932676D8B2007F2891 /* ViewController.swift in Sources */,
+				A10F14932676D8B2007F2891 /* StripeViewController.swift in Sources */,
 				0554CAEB268C132200DC64CF /* SubmitEventsViewController.swift in Sources */,
 				050F8DEC267E384200AD55CB /* FoodTruckHostingViewController.swift in Sources */,
 				0554CAE7268BFF3400DC64CF /* ButtonView.swift in Sources */,
 				050FFF65267E7A280027DC8E /* FoodTruckMapView.swift in Sources */,
 				0554CAE9268C12D500DC64CF /* ContactViewController.swift in Sources */,
+				05171586268EC525001345E7 /* Segues.swift in Sources */,
 				A10F148F2676D8B2007F2891 /* AppDelegate.swift in Sources */,
 				050FFF67267E7BFA0027DC8E /* InsetMapView.swift in Sources */,
 				A10F14912676D8B2007F2891 /* SceneDelegate.swift in Sources */,
+				05171588268ECA68001345E7 /* VendorMenuViewController.swift in Sources */,
 				883515F32678794E0068F10C /* LoginViewController.swift in Sources */,
 				883515F1267874480068F10C /* RegisterViewController.swift in Sources */,
 				A1754154267FECFD0034266D /* StandardVC.swift in Sources */,
+				05171584268EBCD0001345E7 /* UserTrackViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

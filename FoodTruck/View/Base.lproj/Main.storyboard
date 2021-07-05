@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17700" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--User Track View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FoodTruck" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="UserTrackViewController" customModule="FoodTruck" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -48,16 +48,17 @@
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <segue destination="7qK-vJ-Z9L" kind="presentation" modalPresentationStyle="fullScreen" id="4pP-Lq-r0H"/>
+                                            <segue destination="7qK-vJ-Z9L" kind="presentation" identifier="UserTrackToSearch" modalPresentationStyle="fullScreen" id="4pP-Lq-r0H"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EXZ-C7-TwW">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1hr-FO-CvJ">
                                         <rect key="frame" x="0.0" y="613.5" width="414" height="204.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <state key="normal" title="Vendor"/>
                                         <connections>
-                                            <action selector="Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5B5-vO-f8q"/>
-                                            <segue destination="CUQ-zA-hF8" kind="presentation" modalPresentationStyle="fullScreen" id="rNe-lT-1dd"/>
+                                            <action selector="Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EtV-1B-x7a"/>
+                                            <action selector="vendorButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QZk-Qf-Ozp"/>
+                                            <segue destination="CUQ-zA-hF8" kind="show" identifier="UserTrackToAccount" id="xvP-rK-hmC"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -109,7 +110,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                         <state key="normal" title="Find Food Trucks!"/>
                                         <connections>
-                                            <segue destination="Tat-I5-S62" kind="show" id="SMC-eu-Yvf"/>
+                                            <segue destination="Tat-I5-S62" kind="show" identifier="SearchToMap" id="SMC-eu-Yvf"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -150,7 +151,7 @@
         <!--View Controller-->
         <scene sceneID="qkB-N6-MdS">
             <objects>
-                <viewController id="CUQ-zA-hF8" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="CUQ-zA-hF8" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vK5-Qc-VsJ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -177,14 +178,14 @@
                                         <rect key="frame" x="0.0" y="272.5" width="414" height="273"/>
                                         <state key="normal" title="Sign Up"/>
                                         <connections>
-                                            <segue destination="Dua-iJ-9Fi" kind="show" id="fRB-Lv-ngO"/>
+                                            <segue destination="Dua-iJ-9Fi" kind="show" identifier="AccountToRegister" id="fRB-Lv-ngO"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YFY-vQ-c4B">
                                         <rect key="frame" x="0.0" y="545.5" width="414" height="272.5"/>
                                         <state key="normal" title="Login"/>
                                         <connections>
-                                            <segue destination="pcx-in-wi3" kind="show" id="iZO-yI-IE6"/>
+                                            <segue destination="pcx-in-wi3" kind="show" identifier="AccountToLogin" id="qm9-NI-WsS"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -236,7 +237,7 @@
                                                 <state key="normal" title="Register"/>
                                                 <connections>
                                                     <action selector="buttonPressed:" destination="Dua-iJ-9Fi" eventType="touchUpInside" id="QQu-Ua-OHA"/>
-                                                    <segue destination="ptP-um-njl" kind="presentation" identifier="registerSegue" modalPresentationStyle="fullScreen" id="m7h-GA-9uX"/>
+                                                    <segue destination="ptP-um-njl" kind="presentation" identifier="RegisterToSubscription" modalPresentationStyle="fullScreen" id="m7h-GA-9uX"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -268,9 +269,9 @@
         <!--Login View Controller-->
         <scene sceneID="uDJ-nR-Qj8">
             <objects>
-                <viewController id="pcx-in-wi3" customClass="LoginViewController" customModule="FoodTruck" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="pcx-in-wi3" customClass="LoginViewController" customModule="FoodTruck" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AVv-Kc-mM8">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" id="qfu-Oh-Y3O">
@@ -296,7 +297,7 @@
                                                 <state key="normal" title="Login"/>
                                                 <connections>
                                                     <action selector="buttonPressed:" destination="pcx-in-wi3" eventType="touchUpInside" id="UeE-1v-4C2"/>
-                                                    <segue destination="6Vc-jm-BLQ" kind="show" identifier="loginSegue" id="5wp-cB-McQ"/>
+                                                    <segue destination="6Vc-jm-BLQ" kind="show" identifier="LoginToMenu" id="5wp-cB-McQ"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -323,10 +324,10 @@
             </objects>
             <point key="canvasLocation" x="2164" y="1327"/>
         </scene>
-        <!--View Controller-->
+        <!--Vendor Menu View Controller-->
         <scene sceneID="W2Q-rl-83B">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="6Vc-jm-BLQ" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="6Vc-jm-BLQ" customClass="VendorMenuViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ypm-nr-xet">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -343,20 +344,26 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <state key="normal" title="Submit Events"/>
                                         <connections>
-                                            <segue destination="bjI-eI-IJo" kind="show" id="vXc-WP-i9h"/>
+                                            <action selector="submitEventsButtonPressed:" destination="6Vc-jm-BLQ" eventType="touchUpInside" id="ac1-F7-MGo"/>
+                                            <segue destination="bjI-eI-IJo" kind="show" identifier="MenuToEvent" id="vXc-WP-i9h"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OXo-zT-KFj">
                                         <rect key="frame" x="0.0" y="409" width="414" height="204.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <state key="normal" title="Payment"/>
+                                        <connections>
+                                            <action selector="Button:" destination="6Vc-jm-BLQ" eventType="touchUpInside" id="P0k-ai-TlZ"/>
+                                            <action selector="paymentButtonPressed:" destination="6Vc-jm-BLQ" eventType="touchUpInside" id="Lrs-no-QOe"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oe2-bd-iLP">
                                         <rect key="frame" x="0.0" y="613.5" width="414" height="204.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <state key="normal" title="Contact"/>
                                         <connections>
-                                            <segue destination="8Nj-MM-xRP" kind="show" id="sSH-Bm-wyp"/>
+                                            <action selector="contactButtonPressed:" destination="6Vc-jm-BLQ" eventType="touchUpInside" id="Waa-cP-VCg"/>
+                                            <segue destination="8Nj-MM-xRP" kind="show" identifier="MenuToContact" id="sSH-Bm-wyp"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -384,19 +391,8 @@
                     <view key="view" contentMode="scaleToFill" id="EL0-2S-zGj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="QvF-uD-T3X">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
-                            </stackView>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="dGM-BF-diQ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="QvF-uD-T3X" firstAttribute="leading" secondItem="dGM-BF-diQ" secondAttribute="leading" id="3yG-Cb-CNA"/>
-                            <constraint firstItem="QvF-uD-T3X" firstAttribute="bottom" secondItem="dGM-BF-diQ" secondAttribute="bottom" id="J8G-ee-xh8"/>
-                            <constraint firstItem="QvF-uD-T3X" firstAttribute="trailing" secondItem="dGM-BF-diQ" secondAttribute="trailing" id="SBL-uv-hjm"/>
-                            <constraint firstItem="QvF-uD-T3X" firstAttribute="top" secondItem="dGM-BF-diQ" secondAttribute="top" id="Yxm-n3-Q9P"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="kI0-6z-sQ7"/>
                 </viewController>
@@ -525,14 +521,14 @@
                                         <rect key="frame" x="0.0" y="409" width="414" height="204.5"/>
                                         <state key="normal" title="Yearly Subscription"/>
                                         <connections>
-                                            <segue destination="SXq-to-4Zs" kind="show" id="uX0-p7-Gdn"/>
+                                            <segue destination="SXq-to-4Zs" kind="show" identifier="SubscriptionToYearly" id="uX0-p7-Gdn"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wcg-g5-hJP">
                                         <rect key="frame" x="0.0" y="613.5" width="414" height="204.5"/>
                                         <state key="normal" title="6 Month Subsciption"/>
                                         <connections>
-                                            <segue destination="FDL-Kh-jmh" kind="show" id="yE4-WJ-DrS"/>
+                                            <segue destination="FDL-Kh-jmh" kind="show" identifier="SubscriptionToMonthly" id="yE4-WJ-DrS"/>
                                         </connections>
                                     </button>
                                 </subviews>
