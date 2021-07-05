@@ -68,5 +68,9 @@
 	<string>Optional reminders of vendor events.</string>
 	<key>NSContactsUsageDescription</key>
 	<string>Optional adding of invitees to calendar events.</string>
+	<key></key>
+	<string></string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Please Allow Location Data to send to Food Truck App</string>
 </dict>
 </plist>
