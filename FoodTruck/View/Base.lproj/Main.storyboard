@@ -109,7 +109,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                         <state key="normal" title="Find Food Trucks!"/>
                                         <connections>
-                                            <segue destination="Tat-I5-S62" kind="show" id="SMC-eu-Yvf"/>
+                                            <segue destination="TXO-BG-BbP" kind="show" id="nSr-wu-rhr"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -136,16 +136,35 @@
             </objects>
             <point key="canvasLocation" x="1842.0289855072465" y="-188.16964285714286"/>
         </scene>
-        <!--Food Truck Hosting View Controller-->
-        <scene sceneID="By9-Gs-U7E">
+        <!--Map View Controller-->
+        <scene sceneID="aQ9-ba-dZS">
             <objects>
-                <hostingController modalPresentationStyle="fullScreen" id="Tat-I5-S62" customClass="FoodTruckHostingViewController" customModule="FoodTruck" customModuleProvider="target" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="a96-wf-FfE"/>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
-                </hostingController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="PBA-lD-O6d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController id="TXO-BG-BbP" customClass="MapViewController" customModule="FoodTruck" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Zgh-Xa-BhI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="F5t-aE-bm7">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                            </mapView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Pqp-pI-tGO"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="F5t-aE-bm7" firstAttribute="bottom" secondItem="Pqp-pI-tGO" secondAttribute="bottom" id="5r7-6A-1xP"/>
+                            <constraint firstItem="F5t-aE-bm7" firstAttribute="trailing" secondItem="Pqp-pI-tGO" secondAttribute="trailing" id="KS1-x9-rZp"/>
+                            <constraint firstItem="F5t-aE-bm7" firstAttribute="leading" secondItem="Pqp-pI-tGO" secondAttribute="leading" id="eJ3-NK-K83"/>
+                            <constraint firstItem="F5t-aE-bm7" firstAttribute="top" secondItem="Pqp-pI-tGO" secondAttribute="top" id="tA7-7M-ESt"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="M0c-Up-W6r"/>
+                    <connections>
+                        <outlet property="mapView" destination="F5t-aE-bm7" id="1HL-ce-lRB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Udp-hQ-4GJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2866.666666666667" y="-271.20535714285711"/>
+            <point key="canvasLocation" x="2857.971014492754" y="-207.58928571428569"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="qkB-N6-MdS">
@@ -657,7 +676,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="vXc-WP-i9h"/>
         <segue reference="LBC-fR-IDD"/>
         <segue reference="MWS-Tq-rJ5"/>
         <segue reference="hwK-T2-2T2"/>

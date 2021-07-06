@@ -11,8 +11,6 @@ import SwiftUI
 struct FoodTruckMapPin: View {
     // MARK: - Properties
     
-    var location: FoodTruckLocation
-    
     // Triangle shape
     struct Triangle: Shape {
         func path(in rect: CGRect) -> Path {
@@ -59,7 +57,7 @@ struct FoodTruckMapPin: View {
 
 struct FoodTruckMapPin_Previews: PreviewProvider {
     static var previews: some View {
-        FoodTruckMapPin(location: FoodTruckLocation(id: "0", latitude: 0, longitude: 0))
+        FoodTruckMapPin()
             .previewLayout(.sizeThatFits)
             .padding()
     }
