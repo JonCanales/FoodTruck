@@ -8,6 +8,7 @@
 
 import SwiftUI
 import MapKit
+import FirebaseFirestore
 
 struct FoodTruckMapView: View {
     // MARK: - Properties
@@ -26,11 +27,52 @@ struct FoodTruckMapView: View {
         return mapRegion
     }()
     
+    let db = Firestore.firestore()
+    
+//    var locations: [FoodTruckLocation] = []
+    
+    // MARK: - Initializer
+    init() {
+//        fetchLocations()
+//        
+//        func fetchLocations() {
+//            db.collection("locations").addSnapshotListener {
+//                (docSnap, error) in
+//                
+//                self.locations = []
+//                
+//                if let err = error {
+//                    print("Error when retrieving locations: \(err.localizedDescription)")
+//                }
+//                else {
+//                    if let snaps = docSnap?.documents {
+//                        for doc in snaps {
+//                            print(doc.data())
+//                            
+//                            let data = doc.data()
+//                            
+//                            if let docId = doc.documentID as? String, let lat = data["lat"] as? Double, let long = data["lon"] as? Double {
+//                                let location = FoodTruckLocation(id: docId, latitude: lat, longitude: long)
+//                                
+//                                self.locations.append(location)
+//                            }
+//                        }
+//                    }
+//                }
+//            }
+//        }
+    }
+    
     // MARK: - Body
     
     var body: some View {
+        Text("Hello")
         // Map
-        Map(coordinateRegion: $region)
+//        Map(coordinateRegion: $region, annotationItems: locations, annotationContent: { item in
+//            MapAnnotation(coordinate: CLLocationCoordinate2D(latitude: item.latitude, longitude: item.longitude)) {
+//                FoodTruckMapPin(location: item)
+//            }
+//        })
     }
     
     // MARK: - Preview

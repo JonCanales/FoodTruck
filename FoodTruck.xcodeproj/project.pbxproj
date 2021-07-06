@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		050F8DEC267E384200AD55CB /* FoodTruckHostingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050F8DEB267E384200AD55CB /* FoodTruckHostingViewController.swift */; };
-		050FFF65267E7A280027DC8E /* FoodTruckMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050FFF64267E7A280027DC8E /* FoodTruckMapView.swift */; };
 		050FFF67267E7BFA0027DC8E /* InsetMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050FFF66267E7BFA0027DC8E /* InsetMapView.swift */; };
 		050FFF69267ED67A0027DC8E /* FoodTruckMapPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050FFF68267ED67A0027DC8E /* FoodTruckMapPin.swift */; };
+		05115F3C2693D84C00D40440 /* FoodTruck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05115F3B2693D84C00D40440 /* FoodTruck.swift */; };
+		05115F412693F69A00D40440 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05115F402693F69A00D40440 /* MapViewController.swift */; };
 		0554CAE7268BFF3400DC64CF /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0554CAE6268BFF3400DC64CF /* ButtonView.swift */; };
 		0554CAE9268C12D500DC64CF /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0554CAE8268C12D500DC64CF /* ContactViewController.swift */; };
 		0554CAEB268C132200DC64CF /* SubmitEventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0554CAEA268C132200DC64CF /* SubmitEventsViewController.swift */; };
@@ -28,10 +28,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		050F8DEB267E384200AD55CB /* FoodTruckHostingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTruckHostingViewController.swift; sourceTree = "<group>"; };
-		050FFF64267E7A280027DC8E /* FoodTruckMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTruckMapView.swift; sourceTree = "<group>"; };
 		050FFF66267E7BFA0027DC8E /* InsetMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetMapView.swift; sourceTree = "<group>"; };
 		050FFF68267ED67A0027DC8E /* FoodTruckMapPin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTruckMapPin.swift; sourceTree = "<group>"; };
+		05115F3B2693D84C00D40440 /* FoodTruck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTruck.swift; sourceTree = "<group>"; };
+		05115F402693F69A00D40440 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		0554CAE6268BFF3400DC64CF /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		0554CAE8268C12D500DC64CF /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		0554CAEA268C132200DC64CF /* SubmitEventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitEventsViewController.swift; sourceTree = "<group>"; };
@@ -64,9 +64,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0554CAEC268C14B000DC64CF /* Model */ = {
+		05115F392693D61F00D40440 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		05115F3A2693D82C00D40440 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				05115F3B2693D84C00D40440 /* FoodTruck.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -85,7 +93,7 @@
 			children = (
 				A10F14942676D8B2007F2891 /* Main.storyboard */,
 				A1754153267FECFD0034266D /* StandardVC.swift */,
-				050FFF64267E7A280027DC8E /* FoodTruckMapView.swift */,
+				050FFF68267ED67A0027DC8E /* FoodTruckMapPin.swift */,
 				050FFF66267E7BFA0027DC8E /* InsetMapView.swift */,
 				0554CAE6268BFF3400DC64CF /* ButtonView.swift */,
 			);
@@ -95,10 +103,9 @@
 		883515F726787BA70068F10C /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				05115F402693F69A00D40440 /* MapViewController.swift */,
 				883515F22678794E0068F10C /* LoginViewController.swift */,
 				883515F0267874480068F10C /* RegisterViewController.swift */,
-				050F8DEB267E384200AD55CB /* FoodTruckHostingViewController.swift */,
-				050FFF68267ED67A0027DC8E /* FoodTruckMapPin.swift */,
 				0554CAE8268C12D500DC64CF /* ContactViewController.swift */,
 				0554CAEA268C132200DC64CF /* SubmitEventsViewController.swift */,
 			);
@@ -137,9 +144,10 @@
 				A10F148E2676D8B2007F2891 /* AppDelegate.swift */,
 				A10F14902676D8B2007F2891 /* SceneDelegate.swift */,
 				A10F14922676D8B2007F2891 /* ViewController.swift */,
-				0554CAEC268C14B000DC64CF /* Model */,
+				05115F3A2693D82C00D40440 /* Model */,
 				883515F626787B9E0068F10C /* View */,
 				883515F726787BA70068F10C /* Controller */,
+				05115F392693D61F00D40440 /* Data */,
 				A10F14972676D8B3007F2891 /* Assets.xcassets */,
 				A10F14992676D8B3007F2891 /* LaunchScreen.storyboard */,
 				A10F149C2676D8B3007F2891 /* Info.plist */,
@@ -266,15 +274,15 @@
 				050FFF69267ED67A0027DC8E /* FoodTruckMapPin.swift in Sources */,
 				A10F14932676D8B2007F2891 /* ViewController.swift in Sources */,
 				0554CAEB268C132200DC64CF /* SubmitEventsViewController.swift in Sources */,
-				050F8DEC267E384200AD55CB /* FoodTruckHostingViewController.swift in Sources */,
 				0554CAE7268BFF3400DC64CF /* ButtonView.swift in Sources */,
-				050FFF65267E7A280027DC8E /* FoodTruckMapView.swift in Sources */,
 				0554CAE9268C12D500DC64CF /* ContactViewController.swift in Sources */,
 				A10F148F2676D8B2007F2891 /* AppDelegate.swift in Sources */,
 				050FFF67267E7BFA0027DC8E /* InsetMapView.swift in Sources */,
 				A10F14912676D8B2007F2891 /* SceneDelegate.swift in Sources */,
 				883515F32678794E0068F10C /* LoginViewController.swift in Sources */,
 				883515F1267874480068F10C /* RegisterViewController.swift in Sources */,
+				05115F3C2693D84C00D40440 /* FoodTruck.swift in Sources */,
+				05115F412693F69A00D40440 /* MapViewController.swift in Sources */,
 				A1754154267FECFD0034266D /* StandardVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

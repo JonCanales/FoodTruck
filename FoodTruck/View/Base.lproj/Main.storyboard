@@ -109,7 +109,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                         <state key="normal" title="Find Food Trucks!"/>
                                         <connections>
-                                            <segue destination="Tat-I5-S62" kind="show" id="SMC-eu-Yvf"/>
+                                            <segue destination="TXO-BG-BbP" kind="show" id="nSr-wu-rhr"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -136,16 +136,35 @@
             </objects>
             <point key="canvasLocation" x="1842.0289855072465" y="-188.16964285714286"/>
         </scene>
-        <!--Food Truck Hosting View Controller-->
-        <scene sceneID="By9-Gs-U7E">
+        <!--Map View Controller-->
+        <scene sceneID="aQ9-ba-dZS">
             <objects>
-                <hostingController modalPresentationStyle="fullScreen" id="Tat-I5-S62" customClass="FoodTruckHostingViewController" customModule="FoodTruck" customModuleProvider="target" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="a96-wf-FfE"/>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
-                </hostingController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="PBA-lD-O6d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController id="TXO-BG-BbP" customClass="MapViewController" customModule="FoodTruck" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Zgh-Xa-BhI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="F5t-aE-bm7">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                            </mapView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Pqp-pI-tGO"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="F5t-aE-bm7" firstAttribute="bottom" secondItem="Pqp-pI-tGO" secondAttribute="bottom" id="5r7-6A-1xP"/>
+                            <constraint firstItem="F5t-aE-bm7" firstAttribute="trailing" secondItem="Pqp-pI-tGO" secondAttribute="trailing" id="KS1-x9-rZp"/>
+                            <constraint firstItem="F5t-aE-bm7" firstAttribute="leading" secondItem="Pqp-pI-tGO" secondAttribute="leading" id="eJ3-NK-K83"/>
+                            <constraint firstItem="F5t-aE-bm7" firstAttribute="top" secondItem="Pqp-pI-tGO" secondAttribute="top" id="tA7-7M-ESt"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="M0c-Up-W6r"/>
+                    <connections>
+                        <outlet property="mapView" destination="F5t-aE-bm7" id="1HL-ce-lRB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Udp-hQ-4GJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2866.666666666667" y="-271.20535714285711"/>
+            <point key="canvasLocation" x="2857.971014492754" y="-207.58928571428569"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="qkB-N6-MdS">
@@ -228,7 +247,7 @@
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BQI-db-R1A">
                                                 <rect key="frame" x="0.0" y="258" width="414" height="258"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="amt-l7-PTq">
                                                 <rect key="frame" x="0.0" y="516" width="414" height="258"/>
@@ -263,7 +282,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CZV-7Y-MmX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3171" y="654"/>
+            <point key="canvasLocation" x="3462" y="654"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="uDJ-nR-Qj8">
@@ -360,7 +379,10 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OXo-zT-KFj">
                                         <rect key="frame" x="0.0" y="409" width="414" height="204.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                        <state key="normal" title="Payment"/>
+                                        <state key="normal" title="View NJFTRU Event Calendar"/>
+                                        <connections>
+                                            <segue destination="ZaF-Wf-CKN" kind="show" id="KQZ-5U-DHF"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oe2-bd-iLP">
                                         <rect key="frame" x="0.0" y="613.5" width="414" height="204.5"/>
@@ -387,6 +409,41 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tl8-Ny-phV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3326" y="1425"/>
+        </scene>
+        <!--Submit Events View Controller-->
+        <scene sceneID="La3-Yq-RQJ">
+            <objects>
+                <viewController id="ZaF-Wf-CKN" customClass="SubmitEventsViewController" customModule="FoodTruck" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1RX-cG-wRn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6F0-if-6zD">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="NBL-pA-C5w"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6F0-if-6zD" firstAttribute="top" secondItem="NBL-pA-C5w" secondAttribute="top" id="Kvo-eh-azA"/>
+                            <constraint firstItem="6F0-if-6zD" firstAttribute="trailing" secondItem="NBL-pA-C5w" secondAttribute="trailing" id="MEy-uq-2Hg"/>
+                            <constraint firstItem="6F0-if-6zD" firstAttribute="bottom" secondItem="NBL-pA-C5w" secondAttribute="bottom" id="Qyn-kh-1g0"/>
+                            <constraint firstItem="6F0-if-6zD" firstAttribute="leading" secondItem="NBL-pA-C5w" secondAttribute="leading" id="ltn-4l-Gm4"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="z5o-lk-wYn"/>
+                    <connections>
+                        <outlet property="webView" destination="6F0-if-6zD" id="uAw-cS-ble"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UMg-Sp-q1d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4347.826086956522" y="1688.8392857142856"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="mAi-Vp-Moz">
@@ -448,7 +505,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sap-Gz-4pm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4620" y="1380"/>
+            <point key="canvasLocation" x="4612" y="973"/>
         </scene>
         <!--Contact View Controller-->
         <scene sceneID="9RK-r6-57f">
@@ -544,7 +601,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i0r-cw-iBp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4186.9565217391309" y="2358.4821428571427"/>
+            <point key="canvasLocation" x="3681" y="2357"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="V4H-CY-49Y">
@@ -620,8 +677,8 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="LBC-fR-IDD"/>
-        <segue reference="iZO-yI-IE6"/>
-        <segue reference="zzt-xP-Bkh"/>
+        <segue reference="MWS-Tq-rJ5"/>
+        <segue reference="hwK-T2-2T2"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="foodtrucks" width="165.5" height="135"/>
